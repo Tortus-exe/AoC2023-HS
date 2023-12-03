@@ -18,7 +18,8 @@ common warnings
 executable AoC2023
     import:           warnings
     main-is:          Main.hs
-    other-modules:    Solutions.D1
+    other-modules:    Solutions.D1,
+                      Solutions.D2
     -- other-extensions:
     build-depends:    base ^>=4.18.0.0
     hs-source-dirs:   app

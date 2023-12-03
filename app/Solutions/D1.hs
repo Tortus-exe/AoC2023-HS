@@ -8,7 +8,7 @@ toTwoDigit "" = 0
 toTwoDigit c = (read :: String -> Int) . flip map [head, last] $ ($ c)
 
 solved1p1 :: String -> String
-solved1p1 = show . foldr1 (+) . map (toTwoDigit . filter isNumber) . lines
+solved1p1 = show . foldl1 (+) . map (toTwoDigit . filter isNumber) . lines
 
 nums :: [String]
 nums = ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine"]
@@ -34,4 +34,4 @@ findNumberWordAndRead "" = 0
 findNumberWordAndRead s = toTwoDigit . filter isNumber . wordsToNumbers $ s
 
 solved1p2 :: String -> String
-solved1p2 = show . foldr1 (+) . map findNumberWordAndRead . lines
+solved1p2 = show . foldl1 (+) . map findNumberWordAndRead . lines

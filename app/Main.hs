@@ -2,11 +2,14 @@ module Main where
 
 import System.Environment
 import Solutions.D1
+import Solutions.D2
 
 dayTable :: [String -> String]
 dayTable = [
             solved1p1, 
-            solved1p2
+            solved1p2,
+            solved2p1, 
+            solved2p2
            ]
 
 errorMessage :: String
