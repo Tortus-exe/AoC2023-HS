@@ -1,0 +1,25 @@
+cabal-version:      3.0
+name:               AoC2023
+version:            0.1.0.0
+synopsis:           Advent of Code solutions for 2023
+-- description:
+license:            GPL-3.0-or-later
+license-file:       LICENSE
+author:             Tortus-exe
+maintainer:         65506144+Tortus-exe@users.noreply.github.com
+-- copyright:
+build-type:         Simple
+extra-doc-files:    CHANGELOG.md
+extra-source-files: app/Solutions/*
+
+common warnings
+    ghc-options: -Wall
+
+executable AoC2023
+    import:           warnings
+    main-is:          Main.hs
+    other-modules:    Solutions.D1
+    -- other-extensions:
+    build-depends:    base ^>=4.18.0.0
+    hs-source-dirs:   app
+    default-language: Haskell2010
