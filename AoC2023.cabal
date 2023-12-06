@@ -19,8 +19,10 @@ executable AoC2023
     import:           warnings
     main-is:          Main.hs
     other-modules:    Solutions.D1,
-                      Solutions.D2
+                      Solutions.D2,
+                      Solutions.D3
     -- other-extensions:
-    build-depends:    base ^>=4.18.0.0
+    build-depends:    base ^>=4.18.0.0,
+                      lens ^>=5.2.3
     hs-source-dirs:   app
     default-language: Haskell2010
