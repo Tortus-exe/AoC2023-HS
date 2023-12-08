@@ -4,6 +4,7 @@ import System.Environment
 import Solutions.D1
 import Solutions.D2
 import Solutions.D3
+import Solutions.D4
 
 dayTable :: [String -> String]
 dayTable = [
@@ -12,7 +13,9 @@ dayTable = [
             solved2p1, 
             solved2p2,
             solved3p1,
-            solved3p2
+            solved3p2,
+            solved4p1,
+            solved4p2
            ]
 
 errorMessage :: String

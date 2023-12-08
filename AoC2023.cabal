@@ -20,10 +20,12 @@ executable AoC2023
     main-is:          Main.hs
     other-modules:    Solutions.D1,
                       Solutions.D2,
-                      Solutions.D3
+                      Solutions.D3,
+                      Solutions.D4
     -- other-extensions:
     build-depends:    base ^>=4.18.0.0,
                       lens ^>=5.2.3,
-                      monad-loops ^>=0.4.3
+                      mtl,
+                      monad-loops
     hs-source-dirs:   app
     default-language: Haskell2010
